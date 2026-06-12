@@ -8,7 +8,7 @@ function TransactionList({
   async (id) => {
     try {
       await axios.delete(
-        `http://localhost:5000/api/transactions/${id}`
+        `https://mini-fintech-dashboard.onrender.com/api/transactions/${id}`
       );
 
       await fetchTransactions();

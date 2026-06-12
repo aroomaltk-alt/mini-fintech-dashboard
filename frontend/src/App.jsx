@@ -13,7 +13,7 @@ function App() {
   const fetchTransactions = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/transactions"
+        "https://mini-fintech-dashboard.onrender.com/api/transactions"
       );
 
       setTransactions(res.data);

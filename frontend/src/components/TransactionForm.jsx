@@ -22,7 +22,7 @@ function TransactionForm({ fetchTransactions }) {
 
     try {
       await axios.post(
-        "http://localhost:5000/api/transactions",
+       "https://mini-fintech-dashboard.onrender.com/api/transactions",
         form
       );
       await fetchTransactions();
